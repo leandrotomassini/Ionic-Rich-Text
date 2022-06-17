@@ -1,0 +1,7 @@
+{
+  "name": "textrich",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
