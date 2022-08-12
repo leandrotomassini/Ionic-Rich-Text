@@ -30,8 +30,10 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": [],
+            "styles": ["src/theme/variables.scss", "src/global.scss", "./node_modules/quill/dist/quill.bubble.css",
+            "./node_modules/quill/dist/quill.snow.css",
+            "./node_modules/quill/dist/quill.core.css"],
+            "scripts": ["./node_modules/quill/dist/quill.js"],
             "aot": false,
             "vendorChunk": true,
             "extractLicenses": false,

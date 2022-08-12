@@ -7,6 +7,30 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() { }
+
+  public modulesQuill = {
+    toolbar: [
+      ['bold', 'italic', 'underline', 'strike'],
+      [{ font: [] }],
+      [{ color: [] }, { background: [] }],
+      [{ size: ['small', false, 'large', 'huge'] }],
+      [{ header: [1, 2, 3, 4, 5, 6, false] }],
+      [{ align: [] }],
+      ['blockquote', 'code-block'],
+      [{ list: 'ordered' }, { list: 'bullet' }],
+      ['link', 'image', 'video'],
+      ['clean'],
+    ]
+  };
+
+  public htmlContent: any;
+
+
+  onChangedEditor(event: any): void {
+    if (event.html) {
+      this.htmlContent = event.html;
+    }
+  }
 
 }
